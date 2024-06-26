@@ -15,4 +15,3 @@ docker rm test
 
 
 echo "*** Run image ***"
-docker run -d --name test -p $DOCKER_PORT:$DOCKER_PORT  phatijava/$IMAGE:$RELEASE_VERSION
