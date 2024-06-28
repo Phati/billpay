@@ -2,7 +2,7 @@
 
 pipeline{
 
-    agent { label 'kubeagent' }
+    agent any
 
     environment {
         DOCKER_HUB_PASSWORD = credentials('registry-pass')
