@@ -10,8 +10,8 @@ docker login -u phatijava -p $DOCKER_HUB_PASSWORD
 echo "*** Pull docker image image ***"
 docker pull phatijava/$IMAGE:$RELEASE_VERSION
 
-docker kill test
-docker rm test
+echo "*** Checking Kubectl access ***"
 
-
-echo "*** Run image ***"
+kubectl get ns
+kubectl get pods
+helm ls
