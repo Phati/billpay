@@ -31,5 +31,11 @@ public class BillerController {
         data.put("message","Biller Accounts coming soon");
         return new ResponseEntity<>(data, HttpStatus.OK);
     }
+    @GetMapping("/parent-biller-category")
+    public ResponseEntity<?> categories(){
+        Map<String,Object> data = new HashMap<>();
+        data.put("message","parent-biller-categories  coming soon");
+        return new ResponseEntity<>(data, HttpStatus.OK);
+    }
 
 }
