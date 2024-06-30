@@ -13,4 +13,4 @@ docker pull phatijava/$IMAGE:$RELEASE_VERSION
 echo "*** Checking Kubectl access ***"
 
 kubectl get ns
-helm upgrade -f $WORKSPACE/helm-charts/app/values/bill-pay-values.yaml  --install billpay $WORKSPACE/helm-charts/app --namespace cs --create-namespace
+helm upgrade -f $WORKSPACE/helm-charts/app/values/bill-pay.yaml  --install billpay $WORKSPACE/helm-charts/app --namespace cs --create-namespace
