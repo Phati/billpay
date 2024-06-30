@@ -25,4 +25,11 @@ public class BillerController {
         return new ResponseEntity<>(data, HttpStatus.OK);
     }
 
+    @GetMapping("/biller-accounts")
+    public ResponseEntity<?> billerAccounts(){
+        Map<String,Object> data = new HashMap<>();
+        data.put("message","Biller Accounts coming soon");
+        return new ResponseEntity<>(data, HttpStatus.OK);
+    }
+
 }
