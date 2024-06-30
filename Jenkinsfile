@@ -48,7 +48,7 @@ pipeline{
         stage('Deploy'){
             steps{
                 sh 'echo ****************DEPLOY STAGE****************'
-                withKubeConfig(caCertificate: '', clusterName: 'test-cluster-jenkins', contextName: '', credentialsId: 'kubernetes-scret', namespace: 'cs', restrictKubeConfigAccess: false, serverUrl: 'https://34.44.63.28') {
+                withKubeConfig(caCertificate: '', clusterName: 'test-cluster-jenkins', contextName: '', credentialsId: 'kubernetes-scret', namespace: 'cs', restrictKubeConfigAccess: false, serverUrl: 'https://34.173.16.60') {
                     runDeployDockerImage()
                 }
             }
