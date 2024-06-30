@@ -18,4 +18,11 @@ public class BillerController {
         return new ResponseEntity<>(data, HttpStatus.OK);
     }
 
+    @GetMapping("/transaction-history")
+    public ResponseEntity<?> history(){
+        Map<String,Object> data = new HashMap<>();
+        data.put("message","transaction coming soon");
+        return new ResponseEntity<>(data, HttpStatus.OK);
+    }
+
 }
